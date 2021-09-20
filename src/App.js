@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
+import { getRates } from './api/calculateRates';
 import './App.css';
+import CalculatorBox from './components/CalculatorBox';
+import Header from './components/Header';
+import ShipList from './components/ShipList';
 
 function App() {
+
+	useEffect(() => {
+		getRates();
+	}, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+		<div className="pb-20">
+			<Header />
+			<div className="adjust-font mt-10 flex flex-col md:flex-row w-11/12 md:w-10/12 mx-auto justify-between">
+				<CalculatorBox />
+				<ShipList />
+			</div>
+		</div>
+	);
 }
 
 export default App;
