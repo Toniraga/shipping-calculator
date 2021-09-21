@@ -37,9 +37,9 @@ export const Select = ({
       onChange={(e) => onChange(e)}
       className={`select-option h-10 border rounded-md text-sm ${className}`}
     >
-      <option className="w-20" value="Custom package">Custom package</option>
-      <option className="w-20" value="Flat rate box">Flat rate box</option>
-      <option className="w-20" value="Flat rate envelope">Flat rate envelope</option>
+      <option className="w-20" value="custom_package">Custom package</option>
+      <option className="w-20" value="flat_rate_box">Flat rate box</option>
+      <option className="w-20" value="flat_rate_envelope">Flat rate envelope</option>
     </select>
   )
 }

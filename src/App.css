@@ -1,10 +1,22 @@
 .adjust-font {
-  font-family: Roboto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;;
 }
 
 .country-select__form-control {
-  font-size: 0.8rem !important;
+  font-size: 0.9rem !important;
   background-color: white !important;
   height: 40px;
 }
 
+.shipping-date {
+  width: 100% !important;
+  background-color: white !important;
+}
+
+.ship-date-container {
+  width: 100% !important;
+}
