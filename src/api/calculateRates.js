@@ -1,5 +1,6 @@
-const url =
-	'https://thingproxy.freeboard.io/fetch/https://production-api.postmen.com/v3/tools/shipping-rates';
+// https://thingproxy.freeboard.io/fetch/
+
+const url = 'https://sandbox-api.postmen.com/v3/tools/shipping-rates';
 
 
 export const httpGetRates = async (payload) => {
@@ -9,7 +10,10 @@ export const httpGetRates = async (payload) => {
 			mode: 'cors',
 			credentials: 'omit',
 			headers: {
+				Accept: '*/*',
 				'Content-Type': 'application/json',
+				'postmen-api-key': '75634e4f-5e98-4326-8c02-0fe37720ffe8',
+				'Access-Control-Allow-Origin': 'https://sandbox-api.postmen.com',
 			},
 			body: JSON.stringify(payload),
 		});

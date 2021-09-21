@@ -22,6 +22,7 @@
     "test": "craco test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://sandbox-api.postmen.com",
   "eslintConfig": {
     "extends": [
       "react-app",
